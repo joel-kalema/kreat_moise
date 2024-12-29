@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Select, Option } from "@material-tailwind/react";
 
 export default function About() {

@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { Radio, Select, Option } from "@material-tailwind/react";
 
 export default function Preferred() {
-  const [selectedOption, setSelectedOption] = useState(null); // Store a single selected option
+  const [selectedOption, setSelectedOption] = useState(null);
 
   const handleChange = (key) => {
-    // Set the selected option
     setSelectedOption(key);
   };
 

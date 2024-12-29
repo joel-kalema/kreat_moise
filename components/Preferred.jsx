@@ -33,9 +33,10 @@ export default function Preferred() {
               id={`radio-${key}`}
               label={label}
               ripple={true}
-              checked={selectedOption === key}
-              onChange={() => handleChange(key)}
-              className={`checked:bg-[#6a67af] checked:border-[#ffffff]`}
+              icon = {<div className="bg-[#fff] w-2 h-2 rounded-full"></div>}
+              checked={selectedOption === key} // Ensure only the selected one is checked
+              onChange={() => handleChange(key)} // Set the selected option
+              className={`bg-[#fff] checked:bg-[#6a67af] checked:border-[#ffffff]`} // Set the radio button to white and checked color to #6a67af
             />
           </div>
         ))}
